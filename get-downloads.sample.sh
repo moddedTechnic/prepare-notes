@@ -1,1 +1,0 @@
-echo "<path/to/downloads>"

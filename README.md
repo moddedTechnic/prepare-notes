@@ -11,17 +11,9 @@ Clone the repository somewhere sensible.
 git clone https://github.com/moddedTechnic/prepare-notes.git
 ```
 
-Copy the sample `get-downloads.sh` file and replace `<path/to/downloads>` with the path to your downloads folder.
-
-```shell
-cp get-downloads.sample.sh get-downloads.sh
-```
-
-Copy the sample `get-editor.sh` file and replace `<path/to/editor>` with the path to your editor executable.
-
-```shell
-cp get-editor.sample.sh get-editor.sh
-```
+Edit the `downloads` and `editor` variables at the top of the `prepare-notes.sh` file.
+`downloads` should be an absolute path to the directory where the PDFs of the slides have been downloaded to.
+`editor` should be the path to the executable of the editor you wish to run.
 
 Ensure that shell files are executable.
 

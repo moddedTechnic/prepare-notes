@@ -1,5 +1,5 @@
-downloads=$(./get-downloads.sh)
-editor=$(./get-editor.sh)
+downloads=...
+editor=...
 
 target=$1
 shift 1
