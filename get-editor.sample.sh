@@ -1,0 +1,1 @@
+echo "path/to/editor"

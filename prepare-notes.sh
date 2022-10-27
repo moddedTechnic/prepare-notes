@@ -1,4 +1,5 @@
 downloads=$(./get-downloads.sh)
+editor=$(./get-editor.sh)
 
 target=$1
 shift 1
@@ -16,7 +17,7 @@ then
 		for slidesfile in $downloads/$pattern.pdf
 		do
 			num=$(printf "%02d" $i)
-			cp -T "$slidesfile" $target/slides/slides-$num.pdf
+			cp "$slidesfile" $target/slides/slides-$num.pdf
 			i=$((i + 1))
 		done
 	done
@@ -31,4 +32,4 @@ then
 	ls -l $target/img | grep -oE 'slide-[0-9]{1,}\.jpg' | sed 's/.*/\!\[\]\(\.\/img\/&\)/g' > $target/notes.md
 fi
 
-code $target/notes.md
+$editor $target/notes.md
